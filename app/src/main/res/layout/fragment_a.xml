@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:text="Home Fragment"
             android:gravity="center"
-            android:textSize="40dp"
+            android:textSize="40sp"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="50dp"
             app:layout_constraintTop_toBottomOf="@id/titleFragmentA"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +36,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextName"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="60dp"
                 android:ems="10"
                 android:inputType="text"
                 android:text=""/>
@@ -47,7 +47,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="16dp"
             android:hint="Nota 1"
             app:layout_constraintTop_toBottomOf="@id/inputLayoutName"
@@ -58,9 +58,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextGrade1"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="60dp"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="numberDecimal"
                 android:text=""/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,7 +69,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="16dp"
             android:hint="Nota 2"
             app:layout_constraintTop_toBottomOf="@id/inputLayoutGrade1"
@@ -80,11 +80,24 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextGrade2"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="60dp"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="numberDecimal"
                 android:text=""/>
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/navigateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Enviar datos"
+            app:layout_constraintTop_toBottomOf="@id/inputLayoutGrade2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

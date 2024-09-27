@@ -11,6 +11,17 @@
         android:label="FragmentA"
         tools:layout="@layout/fragment_a"
         >
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@+id/fragmentB"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.class_6.fragment.FragmentB"
+        android:label="FragmentB"
+        tools:layout="@layout/fragment_b"
+        >
 
     </fragment>
 

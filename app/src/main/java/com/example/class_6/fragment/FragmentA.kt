@@ -5,24 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.example.class_6.R
 import com.example.class_6.databinding.FragmentABinding
-import java.util.Calendar
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FragmentA.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FragmentA : Fragment() {
 
     private lateinit var binding: FragmentABinding
-    private lateinit var calendar: Calendar;
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,5 +25,25 @@ class FragmentA : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navigationFragmentB()
+    }
+
+    private fun cleanForm(){
+        binding.editTextName.text=null
+        binding.editTextGrade1.text=null
+        binding.editTextGrade2.text=null
+    }
+
+    private fun navigationFragmentB() {
+        binding.navigateButton.setOnClickListener{
+            val dataName = binding.editTextName.text.toString()
+            val dataGrade1 = binding.editTextGrade1.text.toString()
+            val dataGrade2 = binding.editTextGrade2.text.toString()
+            val bundle = Bundle()
+            bundle.putString("keyName", dataName)
+            bundle.putString("keyGrade1", dataGrade1)
+            bundle.putString("keyGrade2", dataGrade2)
+            findNavController().navigate(R.id.action_fragmentA_to_fragmentB, bundle)
+        }
     }
 }
