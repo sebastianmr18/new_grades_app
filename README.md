@@ -182,7 +182,7 @@ Luego, se crea una carpeta navigation, donde se añade el archivo nav_graph.xml.
 
 </navigation>
 ```
-![Asì debe verse el codigo y el visualizador](https://drive.google.com/file/d/1zK1iberDQT_XFQW-Hn9E5FCLr1uj4gqv/view?usp=drive_link)
+![Asì debe verse el codigo y el visualizador](https://github.com/user-attachments/assets/50fb0726-2943-43b1-ac80-9f321f726dcc)
 
 Luego, se agrega la acción de pasar de un fragmento, así:
 ```bash
@@ -244,4 +244,4 @@ class FragmentA : Fragment() {
     }
 }
 ```
-![Ahora el visualizador debe verse así, notese la flecha que comunica a ambos fragmentos.](https://imgur.com/a/O1LIre5.png)
+![Ahora el visualizador debe verse así, notese la flecha que comunica a ambos fragmentos.](https://github.com/user-attachments/assets/1130d8be-a06c-430c-ac05-95307774a318)
