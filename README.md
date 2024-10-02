@@ -1,6 +1,6 @@
-# 📱 navigation_example_app
+# 📱 grades_app
 
-> Esta es una aplicación sencilla donde se prueba funcionalidades de Kotlin tales como Navigation, Dialog y CardView.
+> Esta es una aplicación sencilla donde se prueba funcionalidades de Kotlin tales como Navigation y Dialog.
 
 EL primer paso es agregar las siguientes dependencias en el build.gradel.kts de la aplicación.
 ```bash
